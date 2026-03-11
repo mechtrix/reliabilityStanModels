@@ -4,5 +4,7 @@ This is the repo to provide interactive session the ability to use precompiled S
 
 install with:
 
-`remotes::install_github("mechtrix/reliabilityStanModels")`
+```
+remotes::install_github("mechtrix/reliabilityStanModels")
+```
 
