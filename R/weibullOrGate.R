@@ -9,6 +9,10 @@
 
 weibull_or_gate <- function(t,...){
   standata <- list(t = t, N = length(t))
-  out <- rstan::sampling(stanmodels$weibullOrGate, data = standata, ...)
+  out <- rstan::sampling(
+    stanmodels$weibullOrGate,
+    data = standata,
+    cores = 4,
+    ...)
   return(out)
 }
