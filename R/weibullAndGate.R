@@ -13,6 +13,7 @@ weibull_and_gate <- function(t,...){
     stanmodels$weibullAndGate,
     data = standata,
     cores = 4,
+    iter = 4000,
     ...)
   return(out)
 }
